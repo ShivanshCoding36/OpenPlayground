@@ -374,6 +374,9 @@ html[data-theme="dark"] #toggle-mode-btn i {
     background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 100%);
     color: #059669;
 }
+.educonnect-cover {
+   background: linear-gradient(135deg, #c7a9e9 0%, #a1c4fd 100%);
+}
 
 .card-content {
     padding: 1.5rem;
@@ -724,3 +727,265 @@ html[data-theme="dark"] #toggle-mode-btn i {
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
 }
 
+/* Empty State UI */
+.empty-state {
+    text-align: center;
+    margin: 60px auto;
+    color: #6b7280;
+    font-family: 'Poppins', sans-serif;
+}
+
+.empty-state h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.empty-state p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+#project-search {
+    width: 320px;
+    max-width: 90%;
+    padding: 10px 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#project-search:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* ============================= */
+/*           NAVBAR              */
+/* ============================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.85rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.02em;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: translateY(-1px);
+    color: var(--primary-hover);
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.nav-links a {
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: 0.25rem 0;
+    transition: color 0.2s ease;
+}
+
+/* underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    transition: width 0.25s ease;
+    border-radius: 2px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ============================= */
+/*        MOBILE NAVBAR          */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--card-bg);
+        border-top: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        display: none;
+        flex-direction: column;
+        padding: 1rem 1.25rem;
+        animation: slideDown 0.25s ease forwards;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 0.75rem 0;
+        font-size: 1rem;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Slide animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
+
+.footer {
+    margin-top: 5rem;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Footer text */
+.footer p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+/* footer hover underline */
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: var(--primary);
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* ============================= */
+/*       FOOTER RESPONSIVE       */
+/* ============================= */
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 2rem 1rem;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+}
