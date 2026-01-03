@@ -33,6 +33,7 @@ Our community has built some amazing projects:
 - **Quiz Game** - Interactive quiz with multiple categories
 - **Digital Clock** - Real-time clock with customizable themes
 - **QR Code Generator**- A simple and interactive QR Code Generator.
+- **Instagram Bio Generator** - Generate random bio suggestions with emojis and vibes.
 
 
 *[View all projects →](https://yadavakhileshh.github.io/OpenPlayground/)*
