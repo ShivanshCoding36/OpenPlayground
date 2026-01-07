@@ -18,7 +18,38 @@ class ProjectsLoader {
         this.init();
     }
 
+    showSkeletonCards() {
+        this.container.innerHTML = '';
+        for (let i = 0; i < this.cardsPerPage; i++) {
+            const skeleton = this.createSkeletonCard();
+            this.container.appendChild(skeleton);
+        }
+    }
+
+    createSkeletonCard() {
+        const card = document.createElement('div');
+        card.className = 'card skeleton-card';
+        card.innerHTML = `
+            <div class="card-cover skeleton"></div>
+            <div class="card-content">
+                <div class="card-header-flex">
+                    <div class="skeleton skeleton-title"></div>
+                    <div class="skeleton skeleton-category"></div>
+                </div>
+                <div class="skeleton skeleton-description"></div>
+                <div class="skeleton skeleton-rating"></div>
+                <div class="card-tech">
+                    <span class="skeleton skeleton-tech"></span>
+                    <span class="skeleton skeleton-tech"></span>
+                    <span class="skeleton skeleton-tech"></span>
+                </div>
+            </div>
+        `;
+        return card;
+    }
+
     async init() {
+        this.showSkeletonCards();
         await this.loadProjects();
         this.renderProjects();
         this.setupEventListeners();

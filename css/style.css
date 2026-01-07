@@ -2235,3 +2235,53 @@ html[data-theme="dark"] .team-role {
     font-size: 0.875rem;
     color: var(--text-muted);
 }
+
+/* Skeleton Loading */
+.skeleton-card {
+    pointer-events: none;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--border-light) 50%, var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: var(--radius-sm);
+}
+
+.skeleton-title {
+    height: 1.5rem;
+    width: 70%;
+    margin-bottom: var(--space-2);
+}
+
+.skeleton-category {
+    height: 1rem;
+    width: 30%;
+}
+
+.skeleton-description {
+    height: 1rem;
+    width: 100%;
+    margin-bottom: var(--space-2);
+}
+
+.skeleton-rating {
+    height: 1rem;
+    width: 40%;
+    margin-bottom: var(--space-3);
+}
+
+.skeleton-tech {
+    height: 0.75rem;
+    width: 3rem;
+    margin-right: var(--space-2);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
