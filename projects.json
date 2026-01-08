@@ -1188,10 +1188,10 @@
   "link": "./projects/Life_Choice_Simulator/index.html",
   "icon": "ri-route-line",
   "coverStyle": "background: linear-gradient(135deg, #0f172a 0%, #334155 100%); color:#f8fafc;"
-}
+},
 
-
-    "title": "Drawing Canvas",
+{
+  "title": "Drawing Canvas",
     "category": "game",
     "description": "A simple interactive canvas that lets users draw freely with adjustable brush size and color.",
     "tech": [
@@ -1325,15 +1325,6 @@
   "link": "./projects/Neon_Snake_Arena/index.html",
   "icon": "ri-gamepad-line",
   "coverStyle": "background: linear-gradient(135deg, #020617 0%, #22d3ee 100%); color:#ecfeff;"
-}
-
-
-
-
-]
-  "link": "./projects/online-food-delivery/index.html",
-  "icon": "ri-restaurant-line",
-  "coverClass": "online-food-cover"
 },
   {
     "title": "Pathfinding Visualizer",
@@ -1343,6 +1334,15 @@
     "link": "./projects/Pathfinding_Visualizer/index.html",
     "icon": "ri-direction-line",
     "coverStyle": "background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #6366f1;"
+  },
+    {
+    "title": "Open Source Readiness Checker",
+    "category": "utility",
+    "description": "Assess your readiness for contributing to open source projects.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "./projects/OS-ReadinessChecker/index.html",
+    "icon": "ri-direction-line",
+    "coverStyle": "background: linear-gradient(135deg, #020617 0%, #22d3ee 100%); color:#ecfeff;"
   }
 ]
 
