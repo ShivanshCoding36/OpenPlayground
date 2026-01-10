@@ -1302,6 +1302,19 @@
     "icon": "ri-sword-line",
     "coverStyle": "background: linear-gradient(135deg, #7f1d1d 0%, #1f2937 100%); color:#fef2f2;"
   },
+   {
+    "title": "Percentage Calculator",
+    "category": "utility",
+    "description": "Calculate percentages quickly and easily.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/percentage-calculator/index.html",
+    "icon": "ri-percent-line",
+    "coverStyle": "background: linear-gradient(135deg, #0f172a 0%, #334155 100%); color:#f8fafc;"
+  },
   {
     "title": "Reaction Time Game",
     "category": "game",
