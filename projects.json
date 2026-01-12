@@ -171,6 +171,19 @@
     "icon": "ri-notification-4-line",
     "coverStyle": "background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); color:#ffffff;"
   },
+   {
+    "title": "Alarm Clock App",
+    "category": "utility",
+    "description": "A sleek alarm clock application with multiple alarm settings, snooze functionality, and customizable tones.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "./projects/Alarm-app/index.html",
+    "icon": "ri-alarm-line",
+    "coverStyle": "background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); color:#ffffff;"
+  },
   {
     "title": "Attention Drift Visualizer",
     "category": "productivity",
@@ -208,6 +221,19 @@
     ],
     "link": "./projects/PaginationComponent/index.html",
     "icon": "ri-file-list-3-line",
+    "coverStyle": "background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%); color:#1e40af;"
+  },
+   {
+    "title": "GIF search App",
+    "category": "utility",
+    "description": "Search and display GIFs using the Giphy API with pagination and trending features.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "./projects/gif-search/index.html",
+    "icon": "ri-gif-line",
     "coverStyle": "background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%); color:#1e40af;"
   },
   {
@@ -248,6 +274,19 @@
     "link": "./projects/github-finder/index.html",
     "icon": "ri-timer-flash-line",
     "coverStyle": "background: #4f46e5; color: white;"
+  },
+  {
+    "title": "Age Calculator App",
+    "category": "utility",
+    "description": "Calculate your exact age in years, months, and days.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "./projects/age-calculator-app/index.html",
+    "icon": "ri-calendar-line",
+    "coverStyle": "background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color:#78350f;"
   },
   {
     "title": "Personal Diary",
