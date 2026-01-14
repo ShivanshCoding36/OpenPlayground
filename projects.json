@@ -1,5 +1,35 @@
 [
   {
+    "title": "Sorting Algorithm Visualizer",
+    "category": "Educational",
+    "description": "Visualize how different algorithms sort a scrambled dataset with real-time color-coded comparisons and swaps.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/SortingAlgorithmVisualizer/index.html",
+    "icon": "fa-sort-amount-down",
+    "coverClass": "sorting-visualizer-cover"
+  },
+  {
+    "title": "Physics Gravity Sandbox",
+    "category": "simulation",
+    "difficulty": "Advanced",
+    "description": "Interactive physics playground with gravity, friction, collisions, and object manipulation. Create balls, boxes, polygons, and stars with customizable properties in a dynamic physics environment.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas API",
+      "Physics Engine",
+      "LocalStorage"
+    ],
+    "link": "./projects/PhysicsGravitySandbox/index.html",
+    "icon": "ri-planet-line",
+    "coverStyle": "background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #3b82f6 100%); color: white;"
+  },
+  {
     "title": "Conway's Game of Life",
     "category": "simulation",
     "difficulty": "Intermediate",
