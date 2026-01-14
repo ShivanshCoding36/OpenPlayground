@@ -14,6 +14,21 @@
     "coverStyle": "background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white;"
   },
   {
+  "title": "Decision Spinner",
+  "category": "utility",
+  "difficulty": "Intermediate",
+  "description": "A beautiful pastel-themed decision spinner that helps users make choices by adding custom options and spinning an animated wheel. Features smooth animations, responsive layout, pastel color palette, option management, and instant random selection.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "link": "./projects/decisionSpinner/index.html",
+  "icon": "ri-refresh-line",
+  "coverStyle": "background: linear-gradient(135deg, #8a7fcc 0%, #ff8ba7 100%); color: white;"
+}
+,
+  {
     "title": "365 Days Progress Tracker",
     "category": "utility",
     "difficulty": "Intermediate",
