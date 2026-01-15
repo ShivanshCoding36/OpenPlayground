@@ -42,6 +42,20 @@
   "coverStyle": "background: linear-gradient(135deg, #8a7fcc 0%, #ff8ba7 100%); color: white;"
 }
 ,
+    {
+  "title": "Minimal Countdown",
+  "category": "utility",
+  "difficulty": "Intermediate",
+  "description": "A visually minimal countdown timer that represents time using animated concentric circles and progress rings for hours, minutes, and seconds. Features smooth transitions, start/pause/reset controls, responsive design, and an intuitive visual time experience.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "link": "./projects/MinimalCountdown/index.html",
+  "icon": "ri-timer-line",
+  "coverStyle": "background: linear-gradient(135deg, #4a6fa5 0%, #8fb8e6 100%); color: white;"
+},
   {
     "title": "365 Days Progress Tracker",
     "category": "utility",
