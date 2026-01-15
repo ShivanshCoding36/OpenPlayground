@@ -1090,6 +1090,20 @@
     "coverStyle": "background: #1d4ed8; color: #fbbf24;"
   },
   {
+    "title": "Code Editor & Compiler",
+    "category": "utility",
+    "difficulty": "Advanced",
+    "description": "Browser-based code editor with compiler UI.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/CodeEditor/index.html",
+    "icon": "ri-add-circle-line",
+    "coverStyle": "background: #6366f1; color: white;"
+  },
+  {
     "title": "Counter App",
     "category": "utility",
     "difficulty": "Beginner",
