@@ -117,27 +117,79 @@ class ProjectsLoader {
     showRatingModal(project) {
         const modal = document.createElement('div');
         modal.className = 'rating-modal-overlay';
+        
+        const rating = this.getProjectRating(project.title);
+        const projectRatings = this.ratings[this.sanitizeKey(project.title)] || [];
+        
+        let reviewsHTML = '';
+        if (projectRatings.length > 0) {
+            reviewsHTML = projectRatings
+                .sort((a, b) => b.timestamp - a.timestamp)
+                .map(r => {
+                    const date = new Date(r.timestamp).toLocaleDateString();
+                    const stars = this.generateStars(r.rating);
+                    return `
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-stars">${stars}</div>
+                                <span class="review-date">${date}</span>
+                            </div>
+                            ${r.review ? `<p class="review-text">${r.review}</p>` : ''}
+                        </div>
+                    `;
+                }).join('');
+        } else {
+            reviewsHTML = '<p class="no-reviews">No reviews yet. Be the first to rate this project!</p>';
+        }
+        
         modal.innerHTML = `
             <div class="rating-modal">
                 <div class="rating-modal-header">
                     <h3>Rate "${project.title}"</h3>
                     <button class="rating-modal-close">&times;</button>
                 </div>
+                <div class="rating-modal-tabs">
+                    <button class="tab-btn active" data-tab="rate">Add Rating</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (${projectRatings.length})</button>
+                </div>
                 <div class="rating-modal-body">
-                    <div class="star-rating">
-                        <span class="star" data-rating="1">★</span>
-                        <span class="star" data-rating="2">★</span>
-                        <span class="star" data-rating="3">★</span>
-                        <span class="star" data-rating="4">★</span>
-                        <span class="star" data-rating="5">★</span>
+                    <div class="tab-content active" id="rate-tab">
+                        <div class="current-rating">
+                            <span class="rating-label">Current Average:</span>
+                            <span class="rating-value">${rating.average.toFixed(1)} ★ (${rating.count} ratings)</span>
+                        </div>
+                        <div class="star-rating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <textarea placeholder="Leave a review (optional)" class="review-textarea"></textarea>
+                        <button class="submit-rating">Submit Rating</button>
                     </div>
-                    <textarea placeholder="Leave a review (optional)" class="review-textarea"></textarea>
-                    <button class="submit-rating">Submit Rating</button>
+                    <div class="tab-content" id="reviews-tab">
+                        <div class="reviews-list">
+                            ${reviewsHTML}
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
         
         document.body.appendChild(modal);
+        
+        // Tab switching
+        const tabBtns = modal.querySelectorAll('.tab-btn');
+        const tabContents = modal.querySelectorAll('.tab-content');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab + '-tab').classList.add('active');
+            });
+        });
         
         // Star selection
         const stars = modal.querySelectorAll('.star');
