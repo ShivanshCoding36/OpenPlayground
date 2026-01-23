@@ -269,6 +269,11 @@
       "link": "./projects/color-blindness-checker/index.html"
     },
     {
+      "folder": "text-analyzer",
+      "path": "./projects/text-analyzer/project.json",
+      "link": "./projects/text-analyzer/index.html"
+    },
+    {
       "folder": "color-code-converter",
       "path": "./projects/color-code-converter/project.json",
       "link": "./projects/color-code-converter/index.html"
