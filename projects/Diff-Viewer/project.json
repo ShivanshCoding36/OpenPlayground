@@ -1,0 +1,6 @@
+{
+  "name": "Diff-Viewer",
+  "description": "A visual text comparison tool that highlights insertions and deletions.",
+  "path": "projects/Diff-Viewer/index.html",
+  "tags": ["utility", "developer-tools", "text"]
+}

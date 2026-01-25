@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff-Viewer | Visual Text Compare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="brand">
+                <i class="fas fa-exchange-alt"></i> Diff-Viewer
+            </div>
+            <div class="actions">
+                <button id="btn-compare" class="btn primary">
+                    <i class="fas fa-check"></i> Compare
+                </button>
+                <button id="btn-clear" class="btn secondary">
+                    <i class="fas fa-trash"></i> Clear
+                </button>
+            </div>
+        </header>
+
+        <main class="editor-view" id="editor-view">
+            <div class="pane">
+                <div class="pane-header">Original Text</div>
+                <textarea id="input-original" placeholder="Paste original text here..."></textarea>
+            </div>
+            <div class="pane">
+                <div class="pane-header">Modified Text</div>
+                <textarea id="input-modified" placeholder="Paste new text here..."></textarea>
+            </div>
+        </main>
+
+        <main class="diff-view hidden" id="diff-view">
+            <div class="pane-result">
+                <div class="pane-header">
+                    <span>Original</span>
+                    <button class="icon-btn" id="btn-edit">
+                        <i class="fas fa-pen"></i> Edit
+                    </button>
+                </div>
+                <div class="code-container" id="output-original">
+                    </div>
+            </div>
+            <div class="pane-result">
+                <div class="pane-header">Modified</div>
+            </div>
+            <div class="code-container" id="output-modified">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
