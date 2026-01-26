@@ -1917,6 +1917,76 @@
       "folder": "WorldMeetingPlanner",
       "path": "./projects/WorldMeetingPlanner/project.json",
       "link": "./projects/WorldMeetingPlanner/index.html"
+    },
+    {
+      "folder": "ResonanceForge",
+      "path": "./projects/resonanceforge/project.json",
+      "link": "./projects/resonanceforge/index.html"
+      "folder": "color-blindness-checker",
+      "path": "./projects/color-blindness-checker/project.json",
+      "link": "./projects/color-blindness-checker/index.html"
+    },
+    {
+      "folder": "evoshapes",
+      "path": "./projects/evoshapes/project.json",
+      "link": "./projects/evoshapes/index.html"
+    },
+    {
+      "folder": "synthetic-exchange",
+      "path": "./projects/synthetic-exchange/project.json",
+      "link": "./projects/synthetic-exchange/index.html"
+    },
+    {
+      "folder": "VirtuF",
+      "path": "./projects/virtuf/project.json",
+      "link": "./projects/virtuf/index.html"
+    },
+    {
+      "folder": "WebKernel",
+      "path": "./projects/webkernel/project.json",
+      "link": "./projects/webkernel/index.html"
+    },
+    {
+      "folder": "EvoRefresh",
+      "path": "./projects/evorefresh/project.json",
+      "link": "./projects/evorefresh/index.html"
+    },
+    {
+      "folder": "Flownet",
+      "path": "./projects/flownet/project.json",
+      "link": "./projects/flownet/index.html"
+    },
+    {
+     {
+      "folder": "voice-forge",
+      "path": "./projects/voice-forge/project.json",
+      "link": "./projects/voice-forge/index.html"
+    },
+    {
+      "folder": "Digital Mood Landscape",
+      "path": "./projects/Digital Mood Landscape/project.json",
+      "link": "./projects/Digital Mood Landscape/index.html"
+    },
+    {
+      "folder": "Harmonicajs",
+      "path": "./projects/harmonicjs/project.json",
+      "link": "./projects/harmonicjs/index.html"
+      "folder": "AsciiForge",
+      "path": "./projects/AsciiForge/project.json",
+      "link": "./projects/AsciiForge/index.html"
+    }
+    {
+      "folder": "MyFolio",
+      "path": "./projects/MyFolio/project.json",
+      "link": "./projects/MyFolio/index.html"
+      "folder": "aesthetic-quote-generator",
+      "path": "./projects/aesthetic-quote-generator/project.json",
+      "link": "./projects/aesthetic-quote-generator/index.html"
+    },
+    {
+      "folder": "mousetone",
+      "path": "./projects/mousetone/project.json",
+      "link": "./projects/mousetone/index.html"
     }
   ]
 }
