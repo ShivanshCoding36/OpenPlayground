@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contributor-cards.css">
     <link rel="stylesheet" href="./css/bookmarks.css">
+    <link rel="stylesheet" href="./css/sandbox.css">
     <link rel="stylesheet" href="./css/footer.css">
+
 </head>
 
 <body>
@@ -52,11 +54,27 @@
         <i class="ri-arrow-up-line" aria-hidden="true"></i>
     </button>
 
+    <script type="module" src="./js/core/notificationManager.js"></script>
+    <script type="module" src="./js/core/validationEngine.js"></script>
     <script src="./js/bookmarks.js"></script>
 
-    <script src="./js/chatbot.js"></script>
+    <!-- Analytics Engine - Feature #1291 -->
+    <script src="./js/core/analyticsEngine.js" type="module"></script>
+    <script>
+        // Load analytics engine for non-module scripts
+        import('./js/core/analyticsEngine.js').then(module => {
+            window.analyticsEngine = module.analyticsEngine;
+            console.log('📊 Analytics Engine loaded');
+        }).catch(err => {
+            console.warn('Analytics engine not available:', err.message);
+        });
+    </script>
 
+    <script src="./js/chatbot.js"></script>
     <script src="./js/components.js"></script>
+    <script type="module" src="./js/core/comparisonEngine.js"></script>
+    <script type="module" src="./js/core/sandboxEngine.js"></script>
+
 
     <script>
 
