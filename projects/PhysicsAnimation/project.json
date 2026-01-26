@@ -1,0 +1,14 @@
+{
+  "title": "Physics Animation Playground",
+  "category": "simulation",
+  "difficulty": "Beginner",
+  "description": "An interactive physics simulation with bouncing balls, adjustable gravity, and real-time animation.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Canvas API"
+  ],
+  "icon": "ri-basketball-line",
+  "coverStyle": "background: radial-gradient(circle, #0f2027 0%, #203a43 50%, #2c5364 100%); color: white;"
+}

@@ -844,6 +844,11 @@
       "link": "./projects/keyboard-key-detector/index.html"
     },
     {
+      "folder": "PhysicsAnimation",
+      "path": "./projects/PhysicsAnimation/project.json",
+      "link": "./projects/PhysicsAnimation/index.html"
+    },
+    {
       "folder": "KeyCode",
       "path": "./projects/KeyCode/project.json",
       "link": "./projects/KeyCode/index.html"
