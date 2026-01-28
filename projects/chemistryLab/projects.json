@@ -1,13 +1,13 @@
 {
-  "title": "SVG Blog Generator 📝",
+  "title": "Chemistry Lab Simulator ⚗️",
   "category": "utility",
   "difficulty": "Beginner",
-  "description": "A responsive blog generator built with HTML, CSS, and JavaScript.",
+  "description": "A chemistry lab simulator built with HTML, CSS, and JavaScript.",
   "tech": [
     "HTML",
     "CSS",
     "JavaScript"
   ],
-  "icon": "ri-tools-line",
+  "icon": "ri-flask-line",
   "coverStyle": "background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white;"
 }
